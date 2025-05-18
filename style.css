@@ -211,3 +211,17 @@ p {
         display: none;
     }
 }
+.professional-badges {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.professional-badges span {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
