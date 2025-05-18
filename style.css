@@ -153,3 +153,19 @@ p {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-subtle);
 }
+.skills-grid {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
