@@ -198,3 +198,16 @@ p {
     text-align: center;
     padding: var(--space-lg);
 }
+@media screen and (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-list {
+        display: none;
+    }
+}
