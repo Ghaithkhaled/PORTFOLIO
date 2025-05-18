@@ -22,3 +22,52 @@
     --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.1);
     --border-radius: 8px;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: var(--space-md);
+}
+
+h1 { 
+    font-size: 2.5rem; 
+    line-height: 1.2;
+}
+
+h2 { 
+    font-size: 2rem; 
+    position: relative;
+    padding-bottom: var(--space-sm);
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
+p {
+    margin-bottom: var(--space-md);
+}
