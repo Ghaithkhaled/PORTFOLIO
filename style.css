@@ -128,3 +128,28 @@ p {
 .nav-link:hover::after {
     width: 100%;
 }
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: calc(var(--space-xl) * 2) var(--space-lg) var(--space-lg);
+}
+
+.section {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-lg);
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.section-image {
+    max-width: 300px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-subtle);
+}
